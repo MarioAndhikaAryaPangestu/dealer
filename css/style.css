@@ -209,7 +209,6 @@ header .navbar{
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   grid-template-rows: 600px;
-  
 }
 
 .suv ul li {
@@ -232,7 +231,7 @@ header .navbar{
   border: 1px solid #ffffff;
   box-sizing: border-box;
   width: 1000px;
-  height: 1000px;
+  height: 2500px;
 }
 
 .content h1{
@@ -265,7 +264,6 @@ header .navbar{
   grid-template-columns: repeat(4, auto);
   grid-gap: 1px;
   grid-template-rows: 100px;
-  
 }
 
 .content .rinci ul li {
@@ -322,6 +320,85 @@ header .navbar{
   height: 100px;
   margin-left: 10px;
 }
+
+.content .harga ul li p{
+  margin: 0;
+}
+
+/*penjelasan*/
+.content .penjelasan {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 680px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .penjelasan p{
+  color: white;
+  line-height:16px;
+  margin: 10px;
+}
+
+/*spek*/
+.content .spek {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 900px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .spek h1{
+  color: white;
+  margin: 10px 0 0px 10px;
+}
+
+.content .spek h2{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+/* spek kiri*/
+.content .spek .spekk .kiri{
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 200px;
+  height: 750px;
+  margin: 20px 0 0 10px;
+}
+
+.content .spek .spekk .kiri ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: 100px;
+  grid-gap: 10px;
+  grid-template-rows: repeat(7, auto);
+}
+
+.content .spek .spekk ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+}
+
+.content .spek .spekk ul li p{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+/* spek kanan*/
+.content .spek .spekk .kanan{
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 200px;
+  height: 750px;
+  margin: 20px 0 0 10px;
+}
+
 
 /*footer*/
 .footer {
