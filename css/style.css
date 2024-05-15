@@ -1,3 +1,14 @@
+/*body*/
+body {
+  /*  Sembunyikan Scrollbar  */
+  -ms-overflow-style: none;
+   scrollbar-width: none;
+ }
+ 
+body::-webkit-scrollbar{
+  display: none;
+ }
+
 /*header*/
 header .navbar{
     background-color: #1a1a1a;
@@ -6,12 +17,12 @@ header .navbar{
 }
 
 /*navbar*/
-.nav-item .nav-link {
+.collapse .nav-item .nav-link {
     color: white;
 }
 
-.navbar-nav .nav-link.active{
-  color: white;
+.collapse .navbar-nav .nav-link.active{
+  color: rgb(255, 0, 0);
 }
 
 .navbar .navbar-brand .logo{
@@ -54,7 +65,7 @@ header .navbar{
   
   .dropdown:hover .dropdown-menu {display: block;}
   
-  .dropdown:hover .nav-link {background-color: #2b6fa3;}
+  .dropdown:hover .nav-link {background-color: #0091ff;}
 
 
 /* slider */
@@ -73,31 +84,17 @@ header .navbar{
 }
 
 .slide img {
-  width: 100%;
-  height: 620px;
-  object-fit: cover;
   object-position: center;
 }
 
 /* model*/
-
 .model h3 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   margin-top: 30px;
   margin-left: 30px;
 }
 .model ul {
   margin:0;padding:0;
-}
-.model ul li {
-  padding: 2em;
-  color:#E98A8A;
-}
-.model ul li span {
-  display:block;
-  font-size:1.4em;
-  margin-bottom:1em;
-  color: white;
 }
 
 .model ul {
@@ -105,13 +102,12 @@ header .navbar{
   list-style-type:none;
   margin:0;padding:0;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(2, auto);
   grid-gap: 10px;
 }
 
 .model ul li {
-  border: 1px solid #E98A8A;
-  color: rgb(0, 0, 0);
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px;
   margin: 30px;
@@ -121,4 +117,215 @@ header .navbar{
   max-width: 100%;
   height: auto;
   display: flex;
+  padding-bottom: 10px;
+}
+
+/* sedan*/
+.sedan h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sedan ul {
+  margin:0;padding:0;
+}
+
+.sedan ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-rows: 600px;
+  
+}
+
+.sedan ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.sedan ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* sedan1*/
+.sedan1 h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sedan1 ul {
+  margin:0;padding:0;
+}
+
+.sedan1 ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-columns: 495px;
+  position: relative;
+  left: 33%;
+
+}
+
+.sedan1 ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.sedan1 ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* suv*/
+.suv h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.suv ul {
+  margin:0;padding:0;
+}
+
+.suv ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-rows: 600px;
+  
+}
+
+.suv ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.suv ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/*c3*/
+.content {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 1000px;
+}
+
+.content h1{
+  color: white;
+  margin: 10px 0 10px 115px;
+}
+
+.content .car {
+  width: 800px;
+  display: flex;
+  margin-left: 100px;
+}
+
+.content .rinci {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 100px;
+  margin: 10px 0 10px 50px;
+}
+
+.content .rinci ul {
+  margin:0;padding:0;
+}
+
+.content .rinci ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1px;
+  grid-template-rows: 100px;
+  
+}
+
+.content .rinci ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.content .rinci ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: -10px 0 0 0;
+}
+
+.content .rinci ul li p{
+  margin: -60px 0 0 50px;
+}
+
+.content .rinci ul li .jenis{
+  margin: 10px 0 0 50px;
+}
+
+.content .harga {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 180px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .harga h2{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+.content .harga ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1px;
+  grid-template-rows: 100px;
+  
+}
+
+.content .harga ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+/*footer*/
+.footer {
+    background: linear-gradient( #1E1E1E, #1E1E99);
+    border-top: white 1px solid;
+    padding: 10px;
 }
