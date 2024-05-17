@@ -34,8 +34,8 @@
                                 Jenis Mobil
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">SUV</a></li>
-                                <li><a class="dropdown-item" href="#">SEDAN</a></li>
+                                <li><a class="dropdown-item" href="suv.html">SUV</a></li>
+                                <li><a class="dropdown-item" href="sedan.html">SEDAN</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -53,23 +53,18 @@
     </header>
 
     <!-- slider -->
-    <div class="slider">
-           <div class="slide show">
-               <img src="img/filemobil.png" alt="Gambar 1">
-        </div>
-        <div class="slide">
-            <img src="img/slide2.jpg" alt="Gambar 2">
-        </div>
-        <!-- tambahkan slide lainnya jika diperlukan -->
-        </div> 
-    </div>
+    <div class="slide">
+        <img class="myslide" src="img/silde 2.png" alt="Gambar 1">
+        <img class="myslide" src="img/hasil mobil.png" alt="Gambar 2">
+    <!-- tambahkan slide lainnya jika diperlukan -->
+    </div> 
 
     <!-- model teratas -->
     <div class="model">
         <h3>Model Teratas</h3>
         <ul>
             <li>
-                <img src="img/mobil_2.png" alt="Mobil 1">
+                <img src="img/c3.jpeg" alt="Mobil 1">
                 <p>Citroen C3
                     <br>
                     Rp225 - 236 Juta</p>
@@ -182,4 +177,20 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("myslide");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+        </script>
 </html>

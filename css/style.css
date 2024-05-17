@@ -69,22 +69,9 @@ header .navbar{
 
 
 /* slider */
-.slider {
+.slide .myslide {
+  display:none;
   width: 100%;
-  overflow: hidden;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-}
-
-.show {
-  display: block !important; 
-}
-
-.slide img {
-  object-position: center;
 }
 
 /* model*/
@@ -231,7 +218,7 @@ header .navbar{
   border: 1px solid #ffffff;
   box-sizing: border-box;
   width: 1000px;
-  height: 2500px;
+  height: 3000px;
 }
 
 .content h1{
@@ -345,7 +332,7 @@ header .navbar{
   border: 1px solid #ffffff;
   box-sizing: border-box;
   width: 900px;
-  height: 900px;
+  height: 1000px;
   margin: 20px 0 10px 50px;
 }
 
@@ -359,13 +346,15 @@ header .navbar{
   margin: 10px 0 10px 10px;
 }
 
+
+
 /* spek kiri*/
 .content .spek .spekk .kiri{
-  border: 1px solid #ffffff;
   box-sizing: border-box;
   width: 200px;
-  height: 750px;
-  margin: 20px 0 0 10px;
+  height: 850px;
+  margin: 0 0 0 10px;
+  position: absolute;
 }
 
 .content .spek .spekk .kiri ul {
@@ -377,26 +366,66 @@ header .navbar{
   grid-template-rows: repeat(7, auto);
 }
 
-.content .spek .spekk ul li {
+.content .spek .spekk .kiri ul li {
   border: 1px solid #ffffff;
   color: rgb(255, 255, 255);
   box-sizing: border-box;
   width: 200px;
   height: 100px;
+  text-align: center;
 }
 
-.content .spek .spekk ul li p{
+.content .spek .spekk .kiri ul li h4{
   color: white;
-  margin: 10px 0 10px 10px;
+  margin-top: 30px;
 }
 
 /* spek kanan*/
 .content .spek .spekk .kanan{
-  border: 1px solid #ffffff;
   box-sizing: border-box;
-  width: 200px;
-  height: 750px;
-  margin: 20px 0 0 10px;
+  width: 680px;
+  height: 760px;
+  margin: 20px 0 0 210px;
+}
+
+.content .spek .spekk .kanan .kaki{
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 150px;
+  height: 760px;
+  margin: 50px;
+}
+
+.content .spek .spekk .kanan ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: 100px;
+  grid-gap: 10px;
+  grid-template-rows: repeat(7, auto);
+}
+
+.content .spek .spekk .kanan ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 680px;
+  height: 100px;
+}
+
+.content .spek .spekk .kanan ul li p{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+.content .spek .spekk .kanan .kaki{
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 150px;
+  height: 760px;
+  margin: 0 0 0 0;
 }
 
 
